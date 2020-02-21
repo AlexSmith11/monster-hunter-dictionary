@@ -1,6 +1,7 @@
-## product-cards
+## Monster Hunter Dictionary
 
-A small project that implements bootstrap 4's cards with some json data.
+An implementation of the [mhw-api](https://docs.mhw-db.com/).
+It features many details of all the Monster Hunter World things. Cus I like it.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
