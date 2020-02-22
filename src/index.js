@@ -10,9 +10,9 @@ import './fonts/TimesModern-Light.woff2';
 import './fonts/TimesModern-Regular.woff2';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Cards from './Components/cards'
+import Weapons from './Components/weapons'
 
-ReactDOM.render(<Cards />, document.getElementById('root'));
+ReactDOM.render(<Weapons />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
