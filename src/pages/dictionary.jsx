@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, Nav } from 'react-bootstrap'
-import { useRouteMatch, useParams, Route, Link } from 'react-router-dom';
+import { useRouteMatch, useParams, Route, Link, Switch } from 'react-router-dom';
 
 
 /**
@@ -14,10 +14,56 @@ const Dictionary = () => {
         <div>
             <h2>Dictionary</h2>
             {/** In this first ul tag we have links (a tags with hrefs) to specific pages.
-             * Add routes below in the switch statement */}
+             * Add routes below in the switch statement
+             * Unfortunately the API does not go all the way to the top level,
+             * so we have to enter the links manually. */}
             <ul>
                 <li>
-                    <Link to={`${match.url}/topics`}>Topics</Link>
+                    <Link to={`${match.url}/Ailments`}>Ailments</Link>
+                </li>
+
+                <li>
+                    <Link to={`${match.url}/Armor`}>Armor</Link>
+                </li>
+
+                <li>
+                    <Link to={`${match.url}/ArmorSets`}>Armor Sets</Link>
+                </li>
+
+                <li>
+                    <Link to={`${match.url}/Charms`}>Charms</Link>
+                </li>
+
+                <li>
+                    <Link to={`${match.url}/Decorations`}>Decorations</Link>
+                </li>
+
+                <li>
+                    <Link to={`${match.url}/Events`}>Events</Link>
+                </li>
+
+                <li>
+                    <Link to={`${match.url}/Items`}>Items</Link>
+                </li>
+
+                <li>
+                    <Link to={`${match.url}/Locations`}>Locations</Link>
+                </li>
+
+                <li>
+                    <Link to={`${match.url}/Monsters`}>Monsters</Link>
+                </li>
+
+                <li>
+                    <Link to={`${match.url}/MotionValues`}>Motion Values</Link>
+                </li>
+
+                <li>
+                    <Link to={`${match.url}/Skills`}>Skills</Link>
+                </li>
+
+                <li>
+                    <Link to={`${match.url}/Weapons`}>Weapons</Link>
                 </li>
                 <li>
                     <Link to={`${match.url}/props-v-state`}>
@@ -29,14 +75,14 @@ const Dictionary = () => {
             {/** Add more routes here (to the specific topics)
              * The first route is what i displayed on the page before a topic is chosen.
              * The routes after that display any chosen topics. */}
-            <switch>
+            <Switch>
                 <Route exact path={match.path}>
-                    <h3>Please select a topic :)</h3>
+                    <h4>Please select a topic :)</h4>
                 </Route>
                 <Route path={`${match.path}/:topicId`}>
                     <Topic />
                 </Route>
-            </switch>
+            </Switch>
         </div>
     );
 }
