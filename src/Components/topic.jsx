@@ -14,7 +14,7 @@ import backgroundColour from "../backgroundColour.json"
  * Cards that display a list of monsters
  * @param {*} props 
  */
-const Weapon = props => {
+const Topic = props => {
     const backgroundColourRarity = { backgroundColor: backgroundColour[0][props.rarity] }
 
     return (
@@ -56,4 +56,4 @@ const Weapon = props => {
     );
 }
 
-export default Weapon;
+export default Topic;

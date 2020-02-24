@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Weapon from './weaponDetails';
+import Topic from './topic';
 import { getData } from "../utils/api.js";
 
 /**
@@ -14,13 +14,13 @@ import AllData from '../weapons.json';
  * We also pass in the props unique to each card by just looping over
  * each object in the json array.
  */
-class Weapons extends Component {
+class Topics extends Component {
     render() {
         return (
             <div className="container-fluid d-flex justify-content-center">
                 <div className="row">
-                    {AllData.slice(0, 9).map((weapon) => {
-                        return <Weapon
+                    {AllData.slice(0, 9).map((topic) => {
+                        return <Topic
                             image={weapon.assets.image}
                             category={weapon.type}
                             rarity={weapon.rarity}
@@ -78,4 +78,4 @@ class Weapons extends Component {
     // }
 }
 
-export default Weapons
+export default Topics
