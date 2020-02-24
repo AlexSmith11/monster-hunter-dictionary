@@ -3,7 +3,22 @@
 An implementation of the [mhw-api](https://docs.mhw-db.com/).
 It features many details of all the Monster Hunter World things. Cus I like it.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Design doc (temp - move to Gdoc later):
+Emphasis on broad/shallow structure. Don't want any nested stuff unless required.
+
+I.e: Main page -> Page to display all things (monsters, weapons, etc) -> Page with only monsters -> Specific monster.
+
+There are ways to make levels 1 & 2 as well as 3 & 4 the same. This is for later - seperate into different pages for now.
+
+Initial structure will have a home/main page with stuff, then a page for everything, with each different topic (i.e. weapons, monsters) having its own card.
+Then there will be a page for that specific topic (monsters) each with its own card. Limit the amount of cards shown by 15 or smth. 
+After clicking on a card, you will be taken to a seperate page that only shows details of a specific thing, such as a single weapon or monster.
+
+This means that there will be nested pages of up to 4 levels. This will be reflected in the router: main/dictionary/monsters/monster
+
+In the latter/final structure, layout will be refactored and flattened. /home and /dictionary will be one and the same (no reason having a whole home page for this.) In addition, monsters/monster will be the same, as when you click on a specific item (i.e monster) the card will simply expand, pushing other cards out of the way, to display more info.
+
+This means that there will only be a route nest level of 2: dictionary/monster
 
 ## Available Scripts
 
@@ -16,3 +31,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
+
+
+## Credits
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+react-router was used for web routing.
+
+React-Bootstrap was used for styling.
