@@ -11,7 +11,7 @@ import backgroundColour from "../backgroundColour.json"
 // }
 
 /**
- * Cards that display a list of monsters
+ * Cards that display a list of things within the topic i.e. a list of all monsters
  * @param {*} props 
  */
 const Topic = props => {

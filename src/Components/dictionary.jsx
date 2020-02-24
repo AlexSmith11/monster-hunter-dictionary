@@ -1,3 +1,4 @@
+import React, { Component } from 'react';
 import { Navbar, Nav } from 'react-bootstrap'
 import { useRouteMatch, useParams } from 'react-router-dom';
 

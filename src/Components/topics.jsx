@@ -3,13 +3,15 @@ import Topic from './topic';
 import { getData } from "../utils/api.js";
 
 /**
- * Get data from local json file. Delete this for production (real-world use).
+ * Get data from local json files. Delete this for production (real-world use).
  * See bottom of page for details.
+ * 
+ * Depending on the topic, we want to import/fetch a specific json.
  */
 import AllData from '../weapons.json';
 
 /**
- * Top level comp for the cards. Could control how many, where, etc.
+ * Top level comp for the various topic cards. Could control how many, where, etc.
  * We create a grid using bootstrap rows/columns.
  * We also pass in the props unique to each card by just looping over
  * each object in the json array.

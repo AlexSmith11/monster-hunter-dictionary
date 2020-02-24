@@ -4,17 +4,6 @@ import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 /**
- * Import router
- */
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    Redirect
-} from "react-router-dom";
-
-/**
  * Fonts
  */
 import './fonts/GillSansMTStd-Light.woff2';

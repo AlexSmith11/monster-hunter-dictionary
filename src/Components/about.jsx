@@ -3,14 +3,14 @@ import {Navbar, Nav} from 'react-bootstrap'
 import { useRouteMatch } from 'react-router-dom';
 
 /**
- * Main page
+ * About page
  */
-const Main = () => {
+const About = () => {
     let match = useRouteMatch;
 
     return(
-        <h1>Home Page</h1>
+        <h1>About Page</h1>
     );
 }
 
-export default Main;
+export default About;
