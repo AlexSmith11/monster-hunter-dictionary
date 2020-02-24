@@ -1,22 +1,15 @@
-/**
- * This is the entry file for the application.
- */
-
-import React, { Component } from 'react';
-import React from "react";
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-    Link,
-    Redirect
-} from "react-router-dom";
 
 /**
- * Import the navbar plus any pages you want to dsplay on the navbar
+ * Import the navbar plus any pages you want to dsplay on the navbar here
  */
 import Navbar from './Components/navbar.js'
+import { useRouteMatch } from 'react-router-dom';
 
+/**
+ * Introduce any pathing here. 
+ * The 'Dictionary' path contains all lists (topics).
+ * The 'Topic' path is any specific list such as all monsters, or all weapons.
+ */
 export default function App() {
     return (
         <div>
@@ -25,7 +18,8 @@ export default function App() {
                 <Switch>
                     <Redirect exact from="/" to="Main"></Redirect>
                     <Route path="Main"><Main/></Route>
-                    <Route path=""></Route>
+                    <Route path="Dictionary"></Route>
+                    <Route path="Topic"></Route>
                 </Switch>
             </Router>
         </div>
