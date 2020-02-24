@@ -21,40 +21,40 @@ const Dictionary = () => {
              * so we have to enter the links manually. */}
             <ul>
                 <li>
-                    <Link to={`${match.url}/Ailments`}>Ailments</Link>
+                    <Link to={`${match.url}/ailments`}>Ailments</Link>
                 </li>
                 <li>
-                    <Link to={`${match.url}/Armor`}>Armor</Link>
+                    <Link to={`${match.url}/armor`}>Armor</Link>
                 </li>
                 <li>
-                    <Link to={`${match.url}/ArmorSets`}>Armor Sets</Link>
+                    <Link to={`${match.url}/armorSets`}>Armor Sets</Link>
                 </li>
                 <li>
-                    <Link to={`${match.url}/Charms`}>Charms</Link>
+                    <Link to={`${match.url}/charms`}>Charms</Link>
                 </li>
                 <li>
-                    <Link to={`${match.url}/Decorations`}>Decorations</Link>
+                    <Link to={`${match.url}/decorations`}>Decorations</Link>
                 </li>
                 <li>
-                    <Link to={`${match.url}/Events`}>Events</Link>
+                    <Link to={`${match.url}/events`}>Events</Link>
                 </li>
                 <li>
-                    <Link to={`${match.url}/Items`}>Items</Link>
+                    <Link to={`${match.url}/items`}>Items</Link>
                 </li>
                 <li>
-                    <Link to={`${match.url}/Locations`}>Locations</Link>
+                    <Link to={`${match.url}/locations`}>Locations</Link>
                 </li>
                 <li>
-                    <Link to={`${match.url}/Monsters`}>Monsters</Link>
+                    <Link to={`${match.url}/monsters`}>Monsters</Link>
                 </li>
                 <li>
-                    <Link to={`${match.url}/MotionValues`}>Motion Values</Link>
+                    <Link to={`${match.url}/motion-values`}>Motion Values</Link>
                 </li>
                 <li>
-                    <Link to={`${match.url}/Skills`}>Skills</Link>
+                    <Link to={`${match.url}/skills`}>Skills</Link>
                 </li>
                 <li>
-                    <Link to={`${match.url}/Weapons`}>Weapons</Link>
+                    <Link to={`${match.url}/weapons`}>Weapons</Link>
                 </li>
             </ul>
 
