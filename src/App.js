@@ -18,8 +18,8 @@ export default function App() {
                 <Switch>
                     <Redirect exact from="/" to="Main"></Redirect>
                     <Route path="Main"><Main/></Route>
-                    <Route path="Dictionary"></Route>
-                    <Route path="Topic"></Route>
+                    <Route path="Dictionary"><Dictionary/></Route>
+                    <Route path="About"><About/></Route>
                 </Switch>
             </Router>
         </div>
