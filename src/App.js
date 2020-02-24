@@ -31,10 +31,10 @@ export default function App() {
             <Router>
                 <Navbar/>
                 <Switch>
-                    <Redirect exact from="/" to="Main"></Redirect>
-                    <Route path="Main"><Main/></Route>
-                    <Route path="Dictionary"><Dictionary/></Route>
-                    <Route path="About"><About/></Route>
+                    <Redirect exact from="/" to="main"></Redirect>
+                    <Route path="/main"><Main/></Route>
+                    <Route path="/dictionary"><Dictionary/></Route>
+                    <Route path="/about"><About/></Route>
                 </Switch>
             </Router>
         </div>

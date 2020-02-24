@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, Nav } from 'react-bootstrap'
-import { useRouteMatch, useParams, Route } from 'react-router-dom';
+import { useRouteMatch, useParams, Route, Link } from 'react-router-dom';
 
 
 /**
@@ -17,12 +17,12 @@ const Dictionary = () => {
              * Add routes below in the switch statement */}
             <ul>
                 <li>
-                    <link to={`${match.url}/weapons`}>Weapons</link>
+                    <Link to={`${match.url}/topics`}>Topics</Link>
                 </li>
                 <li>
-                    <link to={`${match.url}/props-v-state`}>
+                    <Link to={`${match.url}/props-v-state`}>
                         Props v. State
-                    </link>
+                    </Link>
                 </li>
             </ul>
 
