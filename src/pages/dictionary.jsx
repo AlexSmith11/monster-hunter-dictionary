@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, Nav } from 'react-bootstrap'
-import { useRouteMatch, useParams } from 'react-router-dom';
+import { useRouteMatch, useParams, Route } from 'react-router-dom';
 
 
 /**
@@ -30,7 +30,7 @@ const Dictionary = () => {
              * The first route is what i displayed on the page before a topic is chosen.
              * The routes after that display any chosen topics. */}
             <switch>
-                <Route exact path={path}>
+                <Route exact path={match.path}>
                     <h3>Please select a topic :)</h3>
                 </Route>
                 <Route path={`${match.path}/:topicId`}>

@@ -3,7 +3,10 @@ import React, { Component } from 'react';
 /**
  * Import the navbar plus any pages you want to dsplay on the navbar here
  */
-import Navbar from './Components/navbar.js'
+import Navbar from './Components/navbar.jsx'
+import Main from './pages/main';
+import Dictionary from './pages/dictionary';
+import About from './pages/about'
 
 /**
  * Import router
@@ -16,13 +19,6 @@ import {
     Redirect,
     useRouteMatch
 } from "react-router-dom";
-
-/**
- * Immport any components
- */
-import Main from './Components/main';
-import Dictionary from './Components/dictionary';
-import About from './Components/about'
 
 /**
  * Introduce any pathing here. 
