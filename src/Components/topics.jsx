@@ -23,13 +23,13 @@ class Topics extends Component {
                 <div className="row">
                     {AllData.slice(0, 9).map((topic) => {
                         return <Topic
-                            image={weapon.assets.image}
-                            category={weapon.type}
-                            rarity={weapon.rarity}
-                            icon={weapon.assets.icon}
-                            title={weapon.name}
-                            dmgType={weapon.damageType}
-                            attack={weapon.attack.display}
+                            // image={weapon.assets.image}
+                            // category={weapon.type}
+                            // rarity={weapon.rarity}
+                            // icon={weapon.assets.icon}
+                            // title={weapon.name}
+                            // dmgType={weapon.damageType}
+                            // attack={weapon.attack.display}
                             
                             // description={weapon.description}
                             // duration={weapon.duration}

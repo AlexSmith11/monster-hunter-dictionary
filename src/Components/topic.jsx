@@ -1,3 +1,4 @@
+import React, { Component } from 'react';
 import "../card.css";
 import backgroundColour from "../backgroundColour.json"
 

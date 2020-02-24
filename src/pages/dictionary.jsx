@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Navbar, Nav } from 'react-bootstrap'
 import { useRouteMatch, useParams, Route, Link, Switch } from 'react-router-dom';
 
+import Topics from '../Components/topics'
+
 
 /**
  * Main page for all topics
@@ -21,54 +23,38 @@ const Dictionary = () => {
                 <li>
                     <Link to={`${match.url}/Ailments`}>Ailments</Link>
                 </li>
-
                 <li>
                     <Link to={`${match.url}/Armor`}>Armor</Link>
                 </li>
-
                 <li>
                     <Link to={`${match.url}/ArmorSets`}>Armor Sets</Link>
                 </li>
-
                 <li>
                     <Link to={`${match.url}/Charms`}>Charms</Link>
                 </li>
-
                 <li>
                     <Link to={`${match.url}/Decorations`}>Decorations</Link>
                 </li>
-
                 <li>
                     <Link to={`${match.url}/Events`}>Events</Link>
                 </li>
-
                 <li>
                     <Link to={`${match.url}/Items`}>Items</Link>
                 </li>
-
                 <li>
                     <Link to={`${match.url}/Locations`}>Locations</Link>
                 </li>
-
                 <li>
                     <Link to={`${match.url}/Monsters`}>Monsters</Link>
                 </li>
-
                 <li>
                     <Link to={`${match.url}/MotionValues`}>Motion Values</Link>
                 </li>
-
                 <li>
                     <Link to={`${match.url}/Skills`}>Skills</Link>
                 </li>
-
                 <li>
                     <Link to={`${match.url}/Weapons`}>Weapons</Link>
-                </li>
-                <li>
-                    <Link to={`${match.url}/props-v-state`}>
-                        Props v. State
-                    </Link>
                 </li>
             </ul>
 
@@ -79,8 +65,9 @@ const Dictionary = () => {
                 <Route exact path={match.path}>
                     <h4>Please select a topic :)</h4>
                 </Route>
-                <Route path={`${match.path}/:topicId`}>
-                    <Topic />
+                <Route
+                    path={`${match.path}/:topicId`}
+                    component={Topics}>
                 </Route>
             </Switch>
         </div>

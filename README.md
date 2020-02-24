@@ -20,6 +20,16 @@ In the latter/final structure, layout will be refactored and flattened. /home an
 
 This means that there will only be a route nest level of 2: dictionary/monster
 
+This is a simple app where we pass the card container (topic component) the topic to fetch
+via props. after an API request, the appropriate data is displayed.
+
+Because of the broad range of topics, some conditional rendering may need be employed.
+
+Reder all topics -> onclick, render only one topic, then on next click render specific item
+IMPORTANT NOTE: Will 100% need several components for topics. One for weapons, another for monsters, etc. Cant reuse one component for all topics.
+Therefore we need a way of determining the component that renders.
+This is done via props. If props is 'weapon', render weapon component.
+
 ## Available Scripts
 
 In the project directory, you can run:
