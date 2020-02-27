@@ -10,8 +10,9 @@ class TopicContainer extends Component {
 
             <div className="container-fluid d-flex justify-content-center">
                 <div className="row">
-                    {AllData.slice(0, 1).map((topic) => {
+                    {AllData.slice(0, 9).map((topic) => {
                         return <Topic
+                            // pageType={}
 
                             // image={weapon.assets.image}
                             // category={weapon.type}
