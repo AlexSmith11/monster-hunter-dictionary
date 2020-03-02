@@ -30,6 +30,9 @@ IMPORTANT NOTE: Will 100% need several components for topics. One for weapons, a
 Therefore we need a way of determining the component that renders.
 This is done via props. If props is 'weapon', render weapon component.
 
+Additional functionality:
+Search implementaion. Fuzzy?
+
 ## Available Scripts
 
 In the project directory, you can run:
