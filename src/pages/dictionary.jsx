@@ -1,44 +1,30 @@
 import React, { useState, Component } from 'react';
 import { Navbar, Nav } from 'react-bootstrap'
-import { useRouteMatch, useParams, Route, Link, Switch, matchPath, withRouter } from 'react-router-dom';
 
 import Topics from '../Components/currentTopic'
 import TopicContainer from '../Components/topicContainer';
 
+//Main page for all topics. Think of this as an index for all topics.
+
 /**
- * Main page for all topics
- * Think of this as an index for all topics.
+ * Use state to determine which 'page' or 'topic type' we are viewing.
+ * All = all topics are displayed, with their topic title and in example image.
  */
 const Dictionary = () => {
-    const [activePage] = useState('all')
+    const [activePage, setActiveStage] = useState('all')
     return (
         <div>
             <h2>Dictionary</h2>
-
+            <h3>Here there will be links to all types of topic, such as monsters and weapons.</h3>
             <TopicContainer activePage={this.state.activePage} />
 
         </div>
     );
 }
 
-
-
-// const getParams = pathName => {
-//     const matchTopic = matchPath(pathName, {
-//         path: '/topic/:topicId'
-//     });
-//     return (matchTopic && matchTopic.params) || {};
-// }
-
 /**
- * The route that renders this component has a path of 'topics/:topicId'.
- * The ':topidId' part of the URL is a placeholder that we can get from 'useParams()'.
+ * Function to control the state of the page (what topic type if not all is rendered).
  */
-// const Topic = () => {
-//     let { topicId } = useParams();
-//     return (
-//         <h3> requested topic ID: {topicId}</h3>
-//     )
-// }
+
 
 export default Dictionary;
