@@ -2,17 +2,8 @@ import React, { Component } from 'react';
 import "../card.css";
 import backgroundColour from "../backgroundColour.json"
 
-// renderSwitchRarity(rarity) {
-//     switch (rarity) {
-//         case '1':
-//             return <h6 className="image-top__text" style={{ color: 'black', backgroundColor: 'yellow' }}>
-//                 <span>Rarity: {props.rarity} &nbsp;</span>
-//             </h6>
-//     }
-// }
-
 /**
- * Cards that display a list of things within the topic i.e. a list of all monsters
+ * Card that displays a list of things within the topic.
  * @param {*} props 
  */
 const Topic = props => {

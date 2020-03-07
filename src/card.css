@@ -1,6 +1,6 @@
 /* Make the page background look different to the card background */
 body {
-    background: radial-gradient(#e5e5e5, #ffff, #e5e5e5);
+    /* background: radial-gradient(#e5e5e5, #ffff, #e5e5e5); */
     padding-bottom: 4rem;
 }
 

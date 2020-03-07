@@ -11,12 +11,17 @@ import TopicContainer from '../Components/topicContainer';
  * All = all topics are displayed, with their topic title and in example image.
  */
 const Dictionary = () => {
-    const [activePage, setActiveStage] = useState('all')
+    const [activeTopic, setActiveTopic] = useState('all')
+
+    function handleTopicChange() {
+        return setActiveTopic(this.state.activeTopic)
+    }
+
     return (
         <div>
             <h2>Dictionary</h2>
             <h3>Here there will be links to all types of topic, such as monsters and weapons.</h3>
-            <TopicContainer activePage={this.state.activePage} />
+            <TopicContainer activeTopic={this.state.activeTopic} />
 
         </div>
     );
