@@ -6,7 +6,7 @@ import backgroundColour from "../backgroundColour.json"
  * Card that displays a list of things within the topic.
  * @param {*} props 
  */
-const Topic = props => {
+const Weapon = props => {
     const backgroundColourRarity = { backgroundColor: backgroundColour[0][props.rarity] }
 
     return (
@@ -48,4 +48,4 @@ const Topic = props => {
     );
 }
 
-export default Topic;
+export default Weapon;

@@ -53,3 +53,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 react-router was used for web routing.
 
 React-Bootstrap was used for styling.
+
+
+
+## Notes
+Temp way:
+Have seperate cards for: Front page (just have a title and maybe an image), weapons, monsters, etc.
+Consume each monster/weapon/etc api depending on the topic.
+THE INITIAL TOPIC CARDS ARE HARD CODED - not dynamic. For now.

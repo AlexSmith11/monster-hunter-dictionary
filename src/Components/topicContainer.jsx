@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Topic from './topic';
+import Weapon from './topics/weapon';
 
 import WeaponData from '../weapons.json';
 

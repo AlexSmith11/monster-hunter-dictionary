@@ -30,6 +30,6 @@ const Dictionary = () => {
 /**
  * Function to control the state of the page (what topic type if not all is rendered).
  */
-
+// All we need to do is pass a var into the component that will then load from different API's based on var.
 
 export default Dictionary;
